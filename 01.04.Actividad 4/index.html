@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>La hamburguesería</title>
+</head>
+<body>
+    
+    <h1>Pide lo que te apetezca:</h1>
+
+    <p>Seleccione el número de hamburguesas que desees:</p>
+
+    <form action="">
+
+        <ul>
+            <li>Hamburguesa completa: <input type="number" min="0" max="5" value="0"></li>
+            <li>Hamburguesa de pollo: <input type="number" min="0" max="5" value="0"></li>
+            <li>Hamburguesa vegetariana: <input type="number" min="0" max="5" value="0"></li>
+            <li>Hamburguesa doble: <input type="number" min="0" max="5" value="0"></li>
+        </ul>
+
+        <p>Escribe las modificaciones o preferencias sobre el pedido:</p>
+        <textarea name="mod" id="" cols="30" rows="5">Si el pepinillo no es para ti dínoslo.</textarea>
+
+        <hr>
+
+        <h2>Datos decontacto</h2>
+
+        <label for="">Nombre: </label><br>
+        <input type="text" value="Nombre">
+        <br>
+        <label for="">Apellidos: </label><br>
+        <input type="text" value="Apellidos">
+        <br>
+        <label for="">Teléfono: </label><br>
+        <input type="text" value="Teléfono">
+        <br>
+        <label for="">Correo electrónico: </label><br>
+        <input type="email">
+        <br>
+
+        <label for="">¿Eres mayor de edad?</label>
+        <select name="edad" id="">
+            <option value="1"></option>
+            <option value="2">Sí</option>
+            <option value="3">No</option>
+        </select>
+
+        <hr>
+
+        <input type="checkbox" checked> Quiero recibirinformación sobre ofertas.
+        <br>
+        <input type="checkbox"> Acepto las notificaciones de uso  del servicio.
+
+        <hr>
+
+        <input type="button" value="Borrar">
+        <input type="button" value="Aceptar">
+
+    </form>
+
+</body>
+</html>
