@@ -1,0 +1,76 @@
+*{
+    background-color: grey; 
+    color: black;
+}
+
+h1 {
+    text-align: center;
+}
+
+nav {
+    margin: 5px auto;
+    width: 90%;
+}
+
+li {
+    float: left;
+    width: 30%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+li a[rel~="tag"]{
+    background-image: url('imagenes/carro.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;  /* width of the image plus a little extra padding */
+    padding-bottom: 10px;
+    background-size: 25px;
+    display: block;
+}
+
+li a[rel~="bookmark"]{
+    background-image: url('imagenes/star.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;  /* width of the image plus a little extra padding */
+    padding-bottom: 10px;
+    background-size: 25px;
+    display: block;
+}
+
+li a[rel~="help"]{
+    background-image: url('imagenes/pdf.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;  /* width of the image plus a little extra padding */
+    padding-bottom: 10px;
+    background-size: 20px;
+    display: block;
+}
+
+li a[rel~="picture"]{
+    background-image: url('imagenes/image.svg');
+    background-size: 25px;
+    background-repeat: no-repeat;
+    padding-left: 30px;  /* width of the image plus a little extra padding */
+    padding-bottom: 10px;
+    display: block;
+}
+
+li a[rel~="search"]{
+    background-image: url('imagenes/shield.svg');
+    background-repeat: no-repeat;
+    padding-left: 30px;  /* width of the image plus a little extra padding */
+    padding-bottom: 10px;
+    background-size: 25px;
+    display: block;
+}
+
+li a[rel~="nofollow"]{
+    display: none;
+    
+}
