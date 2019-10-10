@@ -1,0 +1,23 @@
+h1+h2{
+    color: purple;
+}
+
+h2::first-letter{
+    color: red;
+}
+
+ul{
+    list-style: none;
+}
+
+li:nth-child(odd):hover:before{
+    content: "Somos elementos impares - ";
+}
+
+li:nth-child(even):hover:after{
+    content: " - Somos elementos pares";
+}
+
+li:nth-child(3){
+    color: green;
+}
