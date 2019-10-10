@@ -1,0 +1,50 @@
+*{
+    color: black;
+    text-decoration: none;
+}
+
+input[name="nombre"]:valid{
+    background-color: orange;
+}
+
+input[name="nombre"]:invalid{
+    background-color: red;
+}
+
+select[name="profesion"]{
+    border-radius: 10px;
+}
+
+#puntosCordura:valid{
+    background-color: orange;
+}
+
+#puntosCordura:invalid{
+    background-color: red;
+}
+
+#dificultad:checked:after{
+    width: 150px;
+    height: 150px;
+    background-image: url(cthulhu.jpg);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position-x: 20px;
+    content: "";
+}
+
+input[name="submit"]{
+    background-color: orange;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: green;
+}
