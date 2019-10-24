@@ -1,0 +1,70 @@
+@import "imprimir.css" print;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1{
+    color: white;
+    text-align: center;
+}
+
+.separado{
+    clear: both;;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 90%;
+    margin: 20px auto;
+    min-height: 150px;
+    background-color: grey;
+}
+
+nav{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 75px;
+    background-color: grey;
+}
+
+section{
+    width: 90%;
+    margin: 20px auto;
+    min-height: 350px;
+    background-color: grey;
+    padding: 5% 10%;
+}
+
+.articulos{
+    width: 40%;
+    height: 90%;
+    float: left;
+    background-color: teal;
+}
+
+article{
+    width: 100%;
+    min-height: 50%;
+    float: left;
+}
+
+aside{
+    width: 40%;
+    min-height: 350px;
+    float: right;
+    background-color: violet;
+}
+
+footer{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100px;
+    background-color: grey;
+}
