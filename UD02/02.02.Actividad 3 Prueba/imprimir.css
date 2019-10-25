@@ -1,0 +1,12 @@
+header, footer, nav, aside {
+    display: none;
+}
+
+section, .articulos{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
