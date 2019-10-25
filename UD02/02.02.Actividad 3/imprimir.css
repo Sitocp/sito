@@ -2,10 +2,11 @@ header, footer, nav, aside {
     display: none;
 }
 
-body, section, .articulos, article{
-    width: 100%;
+section, .articulos{
+    width: 100% !important;
     height: 100%;
 }
+
 
 
 
