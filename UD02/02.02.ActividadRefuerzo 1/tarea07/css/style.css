@@ -1,0 +1,133 @@
+/*Colores*/
+:root {
+    --yellow: #ffc600;
+    --black: #272727;
+    --grey: #A1A1A1;
+}
+
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 900;
+    font-size: 10px;
+    color: var(--black);
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("./topography.svg"), linear-gradient(110deg, #06be34, #6d47d9);
+    background-size: 340px, auto;
+    min-height: calc(100vh - 100px);
+    margin: 50px;
+    /* background: white; */
+    background-attachment: fixed;
+    letter-spacing: -1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 5px 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 22px;
+}
+
+nav{
+    width: 25%;
+    float: left;
+    margin-top: 50px;
+}
+
+main{
+    float: left;
+    margin-top: 50px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    width: 70%;
+    box-shadow: 10px 10px 15px black;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.separador{
+    clear: both;
+}
+
+img{
+    border: 2px solid white;
+    border-radius: 1%;
+}
+
+/* Each item in our grid will contain numbers */
+
+.item {
+    /* We center the contents of these items. You can also do this with flexbox too! */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(255,198,0,1);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(255,198,0,1);
+    box-shadow: 0px 0px 5px 1px rgba(255,198,0,1);
+    font-size: 35px;
+    background-color: var(--yellow);
+    /* best colour */
+    margin-bottom: 20px;
+}
+
+.item p {
+    margin: 0 0 5px 0;
+}
+
+.container{
+    display: grid;
+}
+
+.itemp1, .itemp4, .itemp7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+.itemp2, .itemp5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.itemp3, .itemp6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+:target{
+    border-color: green;
+}
+
