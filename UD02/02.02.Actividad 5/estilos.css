@@ -4,3 +4,121 @@
     box-sizing: border-box;
     position: relative;
 }
+
+.separador{
+    clear: both;
+}
+
+body{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header{
+    background-image: linear-gradient(to bottom right, rgba(0,0,255,0.7), rgba(0,255,0,0.7)), url(imagenes/fondo_superior.jpg);
+    background-size: 100%;
+    padding-bottom: 20px;
+}
+
+.cabeceraLogoRedes{
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.logo{
+    float: left;
+}
+
+.redesCabecera{
+    float: right;
+    margin-top:10px;
+}
+.redesCabecera a{
+    float: left;
+    margin-right: 10px;
+}
+.redesCabecera img{
+    float: left;
+}
+.redesCabecera p{
+    float: left;
+    color: white;
+}
+
+.englobaTextoForm{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.textoCabecera{
+    width: 60%;
+    float: left;
+    color: white;
+}
+
+.textoCabecera h1{
+    margin-bottom: 20px;
+}
+
+.textoCabecera li{
+    margin-bottom: 20px;
+    list-style-image: url(imagenes/check.svg);
+}
+
+.englobaForm{
+    width: 30%;
+    float: right;
+    background-color: white;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.englobaForm h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.englobaForm input{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    width: 90%;
+    height: 30px;
+}
+
+.englobaForm input[type="button"]{
+    background-color: #35B81E;
+    border-color: #35B81E;
+    color: white;
+}
+
+.englobaForm a{
+    color: black;
+}
+
+/**CUERPO**/
+main{
+    width: 100%;
+}
+
+.fotosColum{
+    width: 100%;
+    margin: 20px auto;
+}
+
+.fotosColum div{
+    width: 25%;
+    float: left;
+}
+.fotosColum img{
+    border-color: #134563;
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 35%;
+}
+
+.fotosColum p{
+    text-align: center;
+}

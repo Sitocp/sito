@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="icon" href="imagenes/favicon.png">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
     <!--******CABECERA******-->
     <header>
         <!--Parte Superior-->
-        <div>
+        <div class="cabeceraLogoRedes">
 
-            <a href="#"><img src="imagenes/logotipo.png"></a>
+            <a href="#" class="logo"><img src="imagenes/logotipo.png"></a>
 
-            <div>
+            <div class="redesCabecera">
                 <a href="https://facebook.com"><img src="imagenes/facebook.svg" width="20"></a>
                 <a href="https://twitter.com"><img src="imagenes/twitter.svg" width="20"></a>
 
@@ -26,10 +27,12 @@
 
         </div>
 
-        <!--Texto y formulario-->
-        <div>
+        <div class="separador"></div>
 
-            <div>
+        <!--Texto y formulario-->
+        <div class="englobaTextoForm">
+
+            <div class="textoCabecera">
                 <h1>Curso profesional de Marketing Digital</h1>
 
                 <ul>
@@ -42,52 +45,64 @@
                 </ul>
             </div>
 
-            <div>
+            <div class="englobaForm">
 
                     <h3>Solicitar información</h3>
 
                 <form>
                     
                     <label for="nombre">Nombre:</label>
+                    <br>
                     <input type="text" name="nombre">
+                    <br>
                     <label for="ap">Apellido:</label>
+                    <br>
                     <input type="text" name="ap">
+                    <br>
                     <label for="nombre">Email:</label>
+                    <br>
                     <input type="email" name="email">
-
+                    <br>
                     <input type="button" value="Enviar solicitud">
-
+                    <br>
+                    <p>*Nunca compartiremos tu información personal con terceros. Revisa nuestra <a href="https://www.aepd.es/agencia/politica-privacidad-aviso-legal.html">Política de privacidad</a>.</p>
                 </form>
-
-                <p>*Nunca compartiremos tu información personal con terceros. Revisa nuestra <a href="https://www.aepd.es/agencia/politica-privacidad-aviso-legal.html">Política de privacidad</a>.</p>
-            
+                
             </div>
 
         </div>
+
+        <div class="separador"></div>
+
     </header>
+
+    <div class="separador"></div>
 
     <!--***CUERPO***--> 
     <main>
 
         <!--Fotos en columnas-->
-        <article>
+        <article class="fotosColum">
             <div>
-                <img src="" alt="">
+                <img src="imagenes/image.svg">
                 <p>Elige tu propio horario</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="imagenes/image.svg">
                 <p>Aprende de expertos en la industria</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="imagenes/image.svg">
                 <p>Crea campañas reales</p>
             </div>
             <div>
-                <img src="" alt="">
+                <img src="imagenes/image.svg">
                 <p>Obtén tu certificado</p>
             </div> 
+            <div class="separador"></div>
         </article>
+
+        <div class="separador"></div>
 
         <!--Parte video-->
         <article>
