@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     position: relative;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 .separador{
@@ -94,6 +96,11 @@ header{
     color: white;
 }
 
+.englobaForm p{
+    width: 90%;
+    font-size: 14px;
+}
+
 .englobaForm a{
     color: black;
 }
@@ -105,7 +112,7 @@ main{
 
 .fotosColum{
     width: 100%;
-    margin: 20px auto;
+    margin: 30px auto;
 }
 
 .fotosColum div{
@@ -122,3 +129,153 @@ main{
 .fotosColum p{
     text-align: center;
 }
+
+.englobaVideo{
+    width: 100%;
+    margin: 30px auto;
+    padding: 2%;
+    background-color: #F6F9FE;
+}
+
+.textoVideo{
+    width: 55%;
+    float: left;
+}
+
+.textoVideo h2{
+    margin-bottom: 25px;
+}
+
+.textoVideo button{
+    margin-top: 50px;
+    background-color: #35B81E;
+    border-color: #35B81E;
+    color: white;
+    width: 350px;
+    height: 40px;
+}
+
+.video{
+    width: 40%;
+    float: right;
+}
+
+.video video{
+    width: 500px;
+    height: 300px;
+}
+
+.englobaStaff, .englobaStaffPerfiles{
+    width: 100%;
+    margin: 20px auto;
+}
+
+.englobaStaff h1{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.perfil{
+    width: 20%;
+    min-height: 300px;
+    float: left;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.englobaStaff div:nth-child(1){
+    margin-right: 5%;
+    margin-left: 2.5%;
+}
+.englobaStaff div:nth-child(2){
+    margin-right: 5%;
+}
+.englobaStaff div:nth-child(3){
+    margin-right: 5%;
+}
+.englobaStaff div:nth-child(4){
+    margin-right:2.5%;
+}
+
+.englobaStaff div div img{
+    width: 100%;
+}
+
+.englobaStaff div div h3{
+    margin-top: 20px;
+}
+
+.englobaStaff div div p{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.staffRedes{
+    width: 100%;
+}
+
+.staffRedes a{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    margin: 20px auto 0 auto;
+}
+
+.footerInfo{
+    width: 100%;
+    min-height: 200px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(54,136,186,0.7),rgba(54,136,186,0.7)), url(imagenes/fondo_inferior.jpg);
+    background-size: 100%;
+    padding-top: 40px;
+    color: white;
+}
+
+.footerInfo h1{
+    margin-bottom: 20px;
+}
+
+.footerInfo button{
+    margin-top: 20px;
+    background-color: #35B81E;
+    border-color: #35B81E;
+    color: white;
+    width: 350px;
+    height: 40px;
+}
+
+.footerMenu{
+    width: 100%;
+    min-height: 50px;
+    background-color: #2C2A2B;
+    color: white;
+    font-size: 11px;
+    padding-top: 20px;
+}
+
+.footerMenu ul{
+    text-align: left;
+    width: 50%;
+    float: left;
+}
+
+.footerMenu ul:nth-child(1){
+    margin-left: 50px;
+}
+
+.footerMenu li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footerMenu p{
+    width: 30%;
+    text-align: center;
+    float: right;
+}
+

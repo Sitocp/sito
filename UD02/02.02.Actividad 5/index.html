@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="icon" href="imagenes/favicon.png">
     <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -84,7 +85,9 @@
         <!--Fotos en columnas-->
         <article class="fotosColum">
             <div>
-                <img src="imagenes/image.svg">
+                <div>
+                    <img src="imagenes/image.svg">
+                </div>
                 <p>Elige tu propio horario</p>
             </div>
             <div>
@@ -105,82 +108,103 @@
         <div class="separador"></div>
 
         <!--Parte video-->
-        <article>
-            <div>
+        <article class="englobaVideo">
+            <div class="textoVideo">
                 <h2>Domina las herramientas para implementar campañas efectivas de Marketing Digital</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis sed urna pulvinar vulputate. Aenean aliquam luctus lectus, fringilla ornare nibh eleifend eget. 
                     Cras id blandit neque. Integer turpis turpis, auctor eget elit sed, posuere bibendum leo.</p>
-                <button mat-button>Descargar temario</button>
+                <button>Descargar temario</button>
             </div>
 
-            <div>
+            <div class="video">
                 <video controls><source src="videos/marketing.mp4" type="video/mp4"></video>
             </div>
+
+            <div class="separador"></div>
+
         </article>
+
+        <div class="separador"></div>
 
         <!--Instructores-->
-        <article>
+        <article class="englobaStaff">
             <h1>Conoce nuestro staff de instructores</h1>
 
-            <div>
-                <div>
+            <div class="englobaStaffPerfiles">
+                <div class="perfil">
                     <img src="imagenes/profile1.jpeg" alt="">
                     <h3>Ned S.</h3>
-                    <p>Consultor de Digital Marketing</p>
-                    <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
-                    <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
-                    <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    <p>Consultor de Digital <br>Marketing</p>
+                    <div class="staffRedes">
+                        <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
+                        <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
+                        <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="perfil">
                     <img src="imagenes/profile2.jpeg" alt="">
                     <h3>Joan W.</h3>
-                    <p>Paid Search Specialist</p>
-                    <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
-                    <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
-                    <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    <p>Paid Search <br>Specialist</p>
+                    <div class="staffRedes">
+                        <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
+                        <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
+                        <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    </div>
                 </div>
-                <div>
+                <div class="perfil">
                     <img src="imagenes/profile3.jpeg" alt="">
                     <h3>Carrie M.</h3>
-                    <p>Directora de E-commerce</p>
-                    <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
-                    <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
-                    <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    <p>Directora de <br>E-commerce</p>
+                    <div class="staffRedes">
+                        <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
+                        <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
+                        <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    </div>
                 </div>
 
-                <div>
+                <div class="perfil">
                     <img src="imagenes/profile4.jpeg" alt="">
                     <h3>Rick G.</h3>
-                    <p>Consultor de Social Media</p>
-                    <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
-                    <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
-                    <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    <p>Consultor de Social <br>Media</p>
+                    <div class="staffRedes">
+                        <a href="https://facebook.com"><img src="imagenes/facebookBlue.svg" width="20"></a>
+                        <a href="https://www.instagram.com/Sitocp"><img src="imagenes/inBlue.svg" width="20"></a>
+                        <a href="https://twitter.com"><img src="imagenes/twitterBlue.svg" width="20"></a>
+                    </div>
                 </div>
+
+                <div class="separador"></div>
+
             </div>
         </article>
+
+        <div class="separador"></div>
 
         <!--***PIE DE PÁGINA***-->
         <footer>
             <!--Parte informativa-->
-            <div>
+            <div class="footerInfo">
                 <h1>¿Desea más información?</h1>
                 <p>Rellena nuestro formulario de solicitud de información y nos pondremos en contacto contigo.</p>
 
                 <button>Solicitar información ahora!</button>
             </div>
 
+            <div class="separador"></div>
+
             <!--Menu del footer-->
-            <div>
+            <div class="footerMenu">
                 <ul>
                     <li>Home</li>
                     <li>Acerca de</li>
                     <li>Cursos</li>
                     <li>Política de privacidad</li>
-                    <li>COntacto</li>
+                    <li>Contacto</li>
                 </ul>
 
                 <p>2018. Orlando José - SimplicityTree. Derechos reservados</p>
+                <div class="separador"></div>
             </div>
         </footer>
 
