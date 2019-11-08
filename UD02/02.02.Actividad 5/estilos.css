@@ -177,8 +177,7 @@ main{
 }
 
 .video video{
-    width: 500px;
-    height: 300px;
+    width: 100%;
 }
 
 .englobaStaff, .englobaStaffPerfiles{
@@ -295,3 +294,250 @@ footer{
     float: right;
 }
 
+/*---RESPONSIVE---*/
+
+@media only screen and (min-width: 2000px) {
+    p, ul, a, label{
+        font-size: 20px;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+
+    .englobaForm p{
+        font-size: 20px;
+    }
+
+    .englobaForm input{
+        height: 30px;
+    }
+    
+    .englobaForm input[type="button"]{
+        font-size: 20px;
+    }
+
+    .textoVideo button{
+        width: 500px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .footerInfo button{
+        width: 500px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+    p, ul, a, label{
+        font-size: 11px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .englobaForm p{
+        font-size: 11px;
+    }
+
+    .logo img{
+        width: 150px;
+    }
+
+    .redesCabecera img{
+        width: 20px;
+    }
+
+    .englobaForm{
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .englobaForm h3{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .englobaForm input{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        height: 25px;
+    }
+    
+    .englobaForm input[type="button"]{
+        font-size: 11px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    p, ul, a, label{
+        font-size: 8px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    h3{
+        font-size: 14px;
+    }
+
+    .englobaForm p{
+        font-size: 8px;
+    }
+
+    .logo img{
+        width: 125px;
+    }
+
+    .redesCabecera img{
+        width: 15px;
+    }
+
+    .englobaForm{
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .englobaForm h3{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .englobaForm input{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        height: 20px;
+    }
+    
+    .englobaForm input[type="button"]{
+        font-size: 8px;
+    }
+
+    .textoVideo button{
+        margin-top: 15px;
+        width: 250px;
+        height: 25px;
+        font-size: 8px;
+    }
+
+    .perfil{
+        min-height: 150px;
+    }
+
+    .footerInfo button{
+        margin-top: 15px;
+        width: 250px;
+        height: 25px;
+        font-size: 8px;
+    }
+
+    .footerInfo{
+        min-height: 150px;
+        padding-top: 25px;
+    }
+
+    .footerMenu{
+        min-height: 30px;
+        font-size: 8px;
+        padding-top: 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 576px) {
+    p, ul, a, label{
+        font-size: 6px;
+    }
+
+    h1{
+        font-size: 16px;
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    h3{
+        font-size: 12px;
+    }
+
+    .englobaForm p{
+        font-size: 6px;
+    }
+
+    .logo img{
+        width: 100px;
+    }
+
+    .redesCabecera img{
+        width: 10px;
+    }
+
+    .englobaForm{
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .englobaForm h3{
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    
+    .englobaForm input{
+        margin-bottom: 5px;
+        margin-top: 5px;
+        height: 15px;
+    }
+    
+    .englobaForm input[type="button"]{
+        font-size: 6px;
+    }
+
+    .textoVideo button{
+        margin-top: 15px;
+        width: 200px;
+        height: 20px;
+        font-size: 6px;
+    }
+
+    .perfil{
+        min-height: 100px;
+    }
+
+    .footerInfo button{
+        margin-top: 15px;
+        width: 200px;
+        height: 20px;
+        font-size: 6px;
+    }
+
+    .footerInfo{
+        min-height: 125px;
+        padding-top: 20px;
+    }
+
+    .footerMenu{
+        min-height: 25px;
+        font-size: 6px;
+        padding-top: 10px;
+    }
+
+}
