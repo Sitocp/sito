@@ -12,9 +12,9 @@
 }
 
 body{
-    width: 90%;
+    /*width: 90%;*/
     height: 100%;
-    margin: 0 auto;
+    /*margin: 0 auto;*/
 }
 
 header{
@@ -464,11 +464,11 @@ footer{
 
 @media only screen and (max-width: 576px) {
     p, ul, a, label{
-        font-size: 6px;
+        font-size: 12px;
     }
-
+    
     h1{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     h2{
@@ -476,27 +476,71 @@ footer{
     }
 
     h3{
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .englobaForm p{
-        font-size: 6px;
+        font-size: 8px;
+    }
+    .englobaForm p a{
+        font-size: 8px;
+    }
+
+    .cabeceraLogoRedes{
+        width: 100px;
+    }
+
+    .logo{
+        float: none;
     }
 
     .logo img{
         width: 100px;
     }
 
-    .redesCabecera img{
+    .redesCabecera{
+        float: none;
+        text-align: center;
+    }
+
+    .redesCabecera  a img{
         width: 10px;
     }
 
+    #imgTelefono{
+        width: 10px;
+        margin-top: 22.5px;
+    }
+
+    .redesCabecera a{
+        float: none;
+        display: inline-block;
+    }
+
+    .redesCabecera p {
+        float: none;
+    }
+
+    .textoCabecera{
+        margin: 10px auto;
+        width: 90%;
+        float: none;
+    }
+
+    .textoCabecera h1{
+        text-align: center;
+    }
+
     .englobaForm{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
         padding-left: 5px;
         padding-bottom: 5px;
     }
     
     .englobaForm h3{
+        text-align: center;
         margin-bottom: 5px;
         margin-top: 5px;
     }
@@ -504,29 +548,57 @@ footer{
     .englobaForm input{
         margin-bottom: 5px;
         margin-top: 5px;
-        height: 15px;
+        height: 20px;
     }
     
     .englobaForm input[type="button"]{
-        font-size: 6px;
+        font-size: 12px;
+    }
+
+    .colum{
+        float: none;
+        width: 80%;
+        margin: 20px auto !important;
+    }
+
+    .englobaVideo{
+        text-align: center;
+    }
+
+    .textoVideo{
+        width: 100%;
+        float: none;
+    }
+
+    .textoVideo h2{
+        text-align: center;
     }
 
     .textoVideo button{
-        margin-top: 15px;
+        margin: 15px auto;
         width: 200px;
-        height: 20px;
-        font-size: 6px;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .video{
+        float: none;
+        width: 100%;
     }
 
     .perfil{
         min-height: 100px;
+        width: 80%;
+        float: none;
+        margin: 25px auto !important;
     }
 
     .footerInfo button{
         margin-top: 15px;
+        margin-bottom: 15px;
         width: 200px;
-        height: 20px;
-        font-size: 6px;
+        height: 25px;
+        font-size: 12px;
     }
 
     .footerInfo{
@@ -535,9 +607,31 @@ footer{
     }
 
     .footerMenu{
-        min-height: 25px;
-        font-size: 6px;
+        min-height: 150px;
+        font-size: 12px;
         padding-top: 10px;
+    }
+
+    .footerMenu ul{
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    
+    .footerMenu ul:nth-child(1){
+        margin-left: 0;
+    }
+    
+    .footerMenu li{
+        display: block;
+        margin-right: 0;
+    }
+    
+    .footerMenu p{
+        width: 100%;
+        text-align: center;
+        float: none;
     }
 
 }
