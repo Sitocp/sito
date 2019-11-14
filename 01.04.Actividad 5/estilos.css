@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.separador{
+    clear: both;
+}
+
+header{
+    background-color: grey;
+}
+
+.englobaLogo{
+    background-image: linear-gradient(to left, white, black);
+}
+
+.englobaLogo img{
+    margin-left: 20px;
+    margin-top: 45.5px;
+}
+
+header form{
+    float: right;
+    background-color: rgb(38, 44, 38, 0.4);
+    border-radius: 5%;
+    padding: 10px;
+    margin: 20px;
+}
+
+header form label{
+    color: white;
+}
+
+header form input[type="button"]{
+    margin-top: 10px;
+    width: 100%;
+}
+
+header ul{
+    background-color: #333333;
+    list-style-type: none;
+    width: 100%;
+}
+
+header ul li{
+    float: left;
+    width: 25%;
+}
+header ul li a{
+    color: white;
+}
+
+header ul li:hover{
+    background-color: black;
+}
+
+main{
+    min-height: 500px;
+    background-color: #8FB399;
+}
+
+main form{
+    float: right;
+    margin: 20px;
+    padding: 10px;
+    background-color:rgb(38, 44, 38, 0.4);
+    border-radius: 5%;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+main form label{
+    margin-right: 5px;
+    color: white;
+}
+
+article{
+    margin: 20px 20px 20px 40px;
+    padding: 20px;
+    float: left;
+    width: 30%;
+    background-color: #404040;
+    border-radius: 2%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.6);
+    color: white;
+}
+
+article h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+article p{
+    margin-bottom: 15px;
+}
+
+video{
+    float: right;
+    margin: 20px 40px 20px 0px;
+    width: 40%;
+}
+
+footer{
+    background-image: linear-gradient(to bottom, #333333, black);
+    border-top: #333333 1px solid;
+    min-height: 100px;
+    height: 100%;
+}
+
+footer p {
+    float: left;
+    width: 200px;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.derFooter {
+    width: 205px;
+    height: 100px;
+    text-align: center;
+    float: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.redes {
+    float: none;
+    display: inline;
+}
+
+.redes img {
+    width: 45px;
+    margin: 15px 8px;
+    opacity: 0.8;
+}
+
+.redes img:hover{
+    transition: all 0.4s;
+    transform: scale(1.18) rotate(360deg);
+    opacity: 1;
+}

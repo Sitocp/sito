@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
-    <header style="background-color: grey">
+    <header>
 
-        <img src="imagenes/logoSito.svg">
+        <div class="englobaLogo">
+            <img src="imagenes/logoSito.svg">
 
-        <form action="" style="float: right">
-            <label for="user">Usuario</label><input type="text" name="user">
-            <br>
-            <label for="pass">Contraseña</label><input type="password" name="pass">
-            <br>
-            <input type="button" value="Login">
-        </form>
+            <form action="">
+                <label for="user">Usuario</label><br><input type="text" name="user">
+                <br>
+                <label for="pass">Contraseña</label><br><input type="password" name="pass">
+                <br>
+                <input type="button" value="Login">
+            </form>
+            <div class="separador"></div>
+        </div>
 
         <hr>
 
-        <ul style="list-style-type: none; width: 100%;">
-            <li style="float: left; width: 25%"><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Noticias</a></li>
-            <li style="float: left; width: 25%"><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Contacto</a></li>
-            <li style="float: left; width: 25%"><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Cuestionario</a></li>
-            <li style="float: left; width: 25%"><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Carrito</a></li>
+        <ul>
+            <li><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Noticias</a></li>
+            <li><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Contacto</a></li>
+            <li><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Cuestionario</a></li>
+            <li><a href="#" style="display: block;text-align: center;padding: 14px 16px;text-decoration: none;">Carrito</a></li>
             <div style="clear: both"></div>
         </ul>
 
@@ -34,33 +38,46 @@
 
     <hr>
 
-    <main style="min-height: 500px">
+    <main>
 
-        <form action="" style="float: right">
-            <label for="busca">Buscar</label><input type="text" name="busca">
+        <form action="">
+            <label for="busca">Buscar:</label><input type="text" name="busca">
         </form>
 
-        <div style="clear: both"></div>
+        <div class="separador"></div>
 
-        <h1 style="text-align: center">CONTENIDO SEGUN LA PARTE DE LA WEB EN LA QUE SE ESTE</h1>
+        <article>
+            <h1>CONTENIDO SEGUN LA PARTE DE LA WEB EN LA QUE SE ESTE</h1>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-             Reiciendis laboriosam voluptatem nihil ipsum veritatis 
-             assumenda excepturi repellendus! Iusto expedita officiis 
-             ad possimus atque modi unde tempore cum, quibusdam debitis at?</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Reiciendis laboriosam voluptatem nihil ipsum veritatis 
-            assumenda excepturi repellendus! Iusto expedita officiis 
-            ad possimus atque modi unde tempore cum, quibusdam debitis at?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis laboriosam voluptatem nihil ipsum veritatis 
+                assumenda excepturi repellendus! Iusto expedita officiis 
+                ad possimus atque modi unde tempore cum, quibusdam debitis at?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis laboriosam voluptatem nihil ipsum veritatis 
+                assumenda excepturi repellendus! Iusto expedita officiis 
+                ad possimus atque modi unde tempore cum, quibusdam debitis at?</p>
+        </article>  
         
-        
+        <video controls><source src="videos/marketing.mp4" type="video/mp4"></video>
+
+        <div class="separador"></div>
 
     </main>
 
-    <hr>
+    <footer>
+        <p>Powered By <br> Andrés Jesús Córdoba Pulido</p>
 
-    <footer style="background-color: grey; min-height: 100px">
-        <p>Powered By: Andrés Jesús Córdoba Pulido</p>
+        <div class="derFooter">
+
+            <div class="redes"><a href="https://www.instagram.com/Sitocp" target="_blank"><img src="imagenes/socialInstagram.svg"></a></div>
+
+            <div class="redes"><a href="https://www.facebook.com" target="_blank"><img src="imagenes/socialFacebook.svg"></a></div>
+
+            <div class="redes"><a href="https://www.twitter.com" target="_blank"><img src="imagenes/socialTwitter.svg"></a></div>
+            
+        </div>
+        <div class="separador"></div>
     </footer>
 
 </body>
