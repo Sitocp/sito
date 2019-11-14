@@ -1,0 +1,71 @@
+ul{
+    background-color: black;
+    width: 450px;
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+}
+
+li a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+}
+
+ul li:nth-child(1){
+    border-top: yellow 5px solid;
+    background-image: linear-gradient(to bottom, black 50%, yellow 50%);
+    background-size: 100% 200%;
+
+    transition-property: background-position;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+ul li:nth-child(1):hover{
+    background-position: 0 -100%;
+}
+
+ul li:nth-child(2){
+    border-top: green 5px solid;
+    background-image: linear-gradient(to bottom, black 50%, green 50%);
+    background-size: 100% 200%;
+
+    transition-property: background-position;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+ul li:nth-child(2):hover{
+    background-position: 0 -100%;
+}
+
+ul li:nth-child(3){
+    border-top: red 5px solid;
+    background-image: linear-gradient(to bottom, black 50%, red 50%);
+    background-size: 100% 200%;
+
+    transition-property: background-position;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+ul li:nth-child(3):hover{
+    background-position: 0 -100%;
+}
+
+ul li:nth-child(4){
+    border-top: purple 5px solid;
+    background-image: linear-gradient(to bottom, black 50%, purple 50%);
+    background-size: 100% 200%;
+
+    transition-property: background-position;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+ul li:nth-child(4):hover{
+    background-position: 0 -100%;
+}

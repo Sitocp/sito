@@ -1,0 +1,136 @@
+.container{
+    position: relative;
+}
+.caja{
+  width: 180px;
+  height: 180px;
+  background-color: #30B037;
+  color: #FFF;
+  text-align: center;
+  line-height: 180px;
+  margin: 15px;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+.caja1{
+  background-color: red;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja1:hover{
+  transform: scale(0.7);
+}
+
+.caja2{
+  background-color: purple;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja2:hover{
+  transform:rotate(360deg);
+}
+
+.caja3{
+  background-color: blue;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja3:hover{
+  transform:skew(100deg);
+}
+
+.caja4{
+  background-color: lightskyblue;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja4:hover{
+  transform:skewX(20deg);
+}
+
+.caja5{
+  background-color: lightseagreen;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja5:hover{
+  transform:skewY(20deg);
+}
+
+.caja6{
+  background-color: yellow;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja6:hover{
+  transform:translate(10px,10px);
+}
+
+.caja7{
+  background-color: orange;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja7:hover{
+  transform:translateX(10px);
+}
+
+.caja8{
+  background-color: grey;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja8:hover{
+  transform:translateY(10px);
+}
+
+.caja9{
+  background-color: darkblue;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja9:hover{
+  transform:perspective(50px) rotateX(5deg);
+}
+
+.caja10{
+  background-color: black;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja10:hover{
+  transform:perspective(50px) rotateY(5deg);
+}
+
+.caja11{
+  background-color: lightsalmon;
+  transition-property: transform;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja11:hover{
+  transform:matrix(0.866,0.7,-0.8,0.866,0,0);
+}

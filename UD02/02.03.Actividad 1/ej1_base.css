@@ -1,0 +1,125 @@
+.container{
+    position: relative;
+}
+.caja{
+  width: 180px;
+  height: 180px;
+  background-color: #30B037;
+  color: #FFF;
+  text-align: center;
+  line-height: 180px;
+  margin: 15px;
+  float: left;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+.caja1{
+  background-color: red;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja1:hover{
+  background-color: purple;
+}
+
+.caja2{
+  background-color: purple;
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja2:hover{
+  font-size: 42px;
+}
+
+.caja3{
+  background-color: blue;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja3:hover{
+  color:green;
+}
+
+.caja4{
+  background-color: lightskyblue;
+  transition-property: line-height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja4:hover{
+  line-height: 20px;
+}
+
+.caja5{
+  background-color: lightseagreen;
+  transition-property: border-radius;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja5:hover{
+  border-radius: 5%;
+}
+
+.caja6{
+  background-color: yellow;
+  transition-property: box-shadow;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja6:hover{
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.caja7{
+  background-color: orange;
+  transition-property: opacity;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja7:hover{
+  opacity: 0;
+}
+
+.caja8{
+  background-color: grey;
+  transition-property: border;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja8:hover{
+  border: black 5px solid;
+}
+
+.caja9{
+  background-color: darkblue;
+  transition-property: margin;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja9:hover{
+  margin: 10px;
+}
+
+.caja10{
+  background-color: black;
+  transition-property: padding;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.caja10:hover{
+  padding: 10px;
+}
