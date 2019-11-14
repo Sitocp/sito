@@ -10,7 +10,7 @@
 }
 
 header{
-    background-color: grey;
+    background-image: linear-gradient(to left, white, black);
 }
 
 .englobaLogo{
@@ -24,6 +24,7 @@ header{
 
 header form{
     float: right;
+    width: 193px;
     background-color: rgb(38, 44, 38, 0.4);
     border-radius: 5%;
     padding: 10px;
@@ -143,4 +144,29 @@ footer p {
     transition: all 0.4s;
     transform: scale(1.18) rotate(360deg);
     opacity: 1;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .englobaLogo img{
+        width: 50%;
+        margin: 45.5px 25% 0 25%;
+    }
+    
+    header form{
+        float: none;
+        margin: 20px auto;
+    }
+
+    article{
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+    video{
+        float:none;
+        width: 90%;
+        margin: 20px 5%
+    }
 }
