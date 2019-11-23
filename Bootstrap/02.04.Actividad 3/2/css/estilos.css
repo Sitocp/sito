@@ -1,0 +1,25 @@
+.header{
+    background-color: green;
+}
+.col1,.col2,.col3{
+    background-color: red;
+}
+
+.footer1, .footer2{
+    background-color: yellow;
+}
+
+/*Media query md*/
+@media (max-width: 768px) {
+    .header{background-color: cyan;}
+    .col3{background-color: green;}
+}
+
+
+/*Media query xs*/
+@media (max-width: 576px) {
+    .header{background-color: indianred;}
+    .col2{background-color: cyan;}
+    .col3{background-color: red;}
+}
+
