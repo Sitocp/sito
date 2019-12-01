@@ -1,25 +1,130 @@
-.header{
-    background-color: green;
-}
-.col1,.col2,.col3{
-    background-color: red;
+.body{
+    background-color: #ebeced;
 }
 
-.footer1, .footer2{
-    background-color: yellow;
+.eslogan{
+    text-align: center;
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: bold;
 }
 
-/*Media query md*/
-@media (max-width: 768px) {
-    .header{background-color: cyan;}
-    .col3{background-color: green;}
+.carousel-inner, .imgCarousel{
+    height: 600px;
 }
 
+.carta{
+    min-height: 200px;
+}
+
+.cardPortatil{
+    background-color: #f7931e;
+}
+
+.cardPortatil h2{
+    color: #ffdcb2;
+    letter-spacing: 10px;
+}
+
+.btnPortatil{
+    background-color: #f7931e;
+    border-color: #f7931e;
+}
+
+.cardTorre{
+    background-color: #9381aa;
+}
+
+.cardTorre h2{
+    color: #cdbae6;
+    letter-spacing: 25px;
+}
+
+.btnTorre{
+    background-color: #9381aa;
+    border-color: #9381aa;
+}
+
+.cardWorkStation{
+    background-color:#c1272d;
+}
+
+.cardWorkStation h2{
+    color: #e57f7f;
+}
+
+.btnWorkStation{
+    background-color:#c1272d;
+    border-color: #c1272d;
+}
+
+.cardTexto{
+    color: #888;
+    min-height: 100px;
+}
+
+/*Formulario*/
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+
+/*portatil*/
+.containerPortatil{
+    background-color: #f7931e;
+}
+
+.containerTorre{
+    background-color: #9381aa;
+}
+.containerWorkStation{
+    background-color: #c1272d;
+}
+
+.rowContainer{
+    background-color: white;
+}
+
+.rowContainer p{
+    color: #888;
+}
 
 /*Media query xs*/
 @media (max-width: 576px) {
-    .header{background-color: indianred;}
-    .col2{background-color: cyan;}
-    .col3{background-color: red;}
+    .carousel-inner, .imgCarousel{
+        max-height: 250px;
+    }
 }
 
+/*Media query xs*/
+@media (max-width: 768px) {
+    .carousel-inner, .imgCarousel{
+        max-height: 450px;
+    }
+}
