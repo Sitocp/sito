@@ -1,0 +1,99 @@
+* {
+    /*Reseteo de margenes y padding*/
+    margin: 0;
+    padding: 0;
+    /*Modificacion del ancho del modelo de cajas*/
+    box-sizing: border-box;
+    position: relative;
+
+    /*Fuente*/
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*CABECERA*/
+
+header{
+    width: 90%;
+    margin: 0 auto;
+
+    /*Fuente*/
+    font-family: 'Roboto', sans-serif;
+
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.englobaLogo{
+    width: 25%;
+}
+
+.listaHeader{
+    width: 50%;
+}
+
+.listaHeader ul{
+    list-style-type: none;
+}
+
+.listaHeader li{
+    padding-top: 1em;
+
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+
+    /*Transicion*/
+    transition-property: border;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.listaHeader li:hover{
+    border-bottom: red 1px solid;
+}
+
+.listaHeader li:nth-child(4){
+    width: 40%;
+}
+
+.listaHeader a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.contactoHeader{
+    padding-top: 0.5em;
+
+    width: 25%;
+}
+
+.contactoHeader a{
+    padding: 0.5em 1.5em;
+    float: right;
+    
+    color: black;
+    text-decoration: none;
+    border: red 1px solid;
+
+    /*Transicion*/
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.contactoHeader a:hover{
+    background-color: red;
+    color: white;
+}
+
+
+
+
