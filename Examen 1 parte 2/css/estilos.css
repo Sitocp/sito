@@ -1,0 +1,349 @@
+* {
+    /*Reseteo de margenes y padding*/
+    margin: 0;
+    padding: 0;
+    /*Modificacion del ancho del modelo de cajas*/
+    box-sizing: border-box;
+    position: relative;
+
+    /*Fuente*/
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*CABECERA*/
+
+header{
+    width: 90%;
+    margin: 0 auto;
+
+    /*Fuente*/
+    font-family: 'Roboto', sans-serif;
+
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.englobaLogo{
+    width: 25%;
+}
+
+.listaHeader{
+    width: 50%;
+}
+
+.listaHeader ul{
+    list-style-type: none;
+}
+
+.listaHeader li{
+    padding-top: 1em;
+
+    width: 19%;
+    display: inline-block;
+    text-align: center;
+
+    /*Transicion*/
+    transition-property: border;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.listaHeader li:hover{
+    border-bottom: red 1px solid;
+}
+
+.listaHeader li:nth-child(4){
+    width: 40%;
+}
+
+.listaHeader a{
+    color: black;
+    text-decoration: none;
+
+}
+
+.contactoHeader{
+    padding-top: 0.5em;
+
+    width: 25%;
+}
+
+.contactoHeader a{
+    padding: 0.5em 1.5em;
+    float: right;
+    
+    color: black;
+    text-decoration: none;
+    border: red 1px solid;
+
+    /*Transicion*/
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+.contactoHeader a:hover{
+    background-color: red;
+    color: white;
+}
+
+/*---MAIN---*/
+
+/*Seccion1*/
+
+.seccion1{
+    width: 100%;
+    height: 600px;
+
+    /*Gradiente*/
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0)), url(../images/buffet-1.jpg);
+
+    border-top: red 1px solid;
+
+    /*Parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*Flexbox*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion1 h1{
+    text-align: center;
+    color: #F2FF0B;
+    text-shadow: 2px 2px black;
+
+    font-size: 4em;
+}
+
+/*Seccion2*/
+.seccion2{
+    width: 100%;
+    margin-top: 10px;
+
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion2Cabecera, .seccion2Contenido{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.seccion2Cabecera{    
+    text-align: center;
+}
+
+.seccion2Cabecera hr{
+    width: 5%;
+    margin: 15px auto;
+
+    border-color: red;
+}
+
+.seccion2Contenido{
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.seccion2ContenidoImg, .seccion2ContenidoParrafos{
+    width: 45%;
+}
+
+.seccion2ContenidoParrafos p{
+    margin-bottom: 15px;
+}
+
+/*Seccion3*/
+
+.seccion3{
+    width: 100%;
+    height: 350px;
+
+    margin: 20px 0;
+
+    /*Gradiente*/
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0)), url(../images/food-table.jpg);
+
+    /*Parallax*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /*Flexbox*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion3 h1{
+    text-align: center;
+    color: white;
+    font-weight: normal;
+}
+
+/*Seccion4*/
+.seccion4{
+    width: 100%;
+    margin: 20px 0;
+
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion4Cabecera, .englobaCartas{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.seccion4Cabecera{    
+    text-align: center;
+}
+
+.seccion4Cabecera hr{
+    width: 5%;
+    margin: 15px auto;
+
+    border-color: red;
+}
+
+.englobaCartas{
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.carta{
+    width: 30%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+}
+
+.carta img{
+    width: 100%;
+}
+
+.carta p{
+    margin: 10px 0;
+    text-align: center;
+}
+
+/*Seccion5*/
+.seccion5{
+    width: 100%;
+    margin: 20px 0;
+
+    background-color: #FCFCFC; /*Fondo gris claro, sacado de la imagen*/
+
+    /*Flexbox*/
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion5Cabecera, .seccion5Parrafo, .englobaPaquetes{
+    width: 100%;
+    margin: 20px 0;
+}
+
+.seccion5Cabecera{    
+    text-align: center;
+}
+
+.seccion5Parrafo{
+    text-align: center;
+}
+
+.seccion5Cabecera hr{
+    width: 5%;
+    margin: 15px auto;
+
+    border-color: red;
+}
+
+.englobaPaquetes{
+    /*Flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.paquete{
+    width: 25%;
+
+    background-color: white;
+    border: grey 1px solid;
+}
+
+.paquete ul{
+    margin: 0 auto;
+
+    list-style-image: url(../images/check.svg);
+
+    /*Transicion*/
+    transition-property: box-shadow;
+    transition-duration: 0.1s;
+    transition-timing-function: linear;
+}
+
+.paquete ul:hover{
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.paquete li{
+    border-bottom: lightgrey 1px solid;
+    padding: 15px 0;
+
+    text-align: center;
+    list-style-position: inside; /*Centramos tambien las bullets*/
+}
+
+.paqueteGuion{
+    list-style-type: none;
+    list-style-image: none;
+}
+
+/*Primer li*/
+.paquete ul li:nth-child(1){
+    padding: 15px 0;
+
+    list-style-type: none;
+    list-style-image: none;
+
+    font-weight: bold;
+}
+
+/*Segundo li*/
+.paquete ul li:nth-child(2){
+    padding: 15px 0;
+    width: 100%;
+
+    list-style-type: none;
+    list-style-image: none;
+
+    background-color: lightgrey;
+}
+
+/*Ultimo li*/
+.paquete ul li:nth-child(10){
+    border: none;
+}
