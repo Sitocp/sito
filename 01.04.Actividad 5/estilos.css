@@ -120,6 +120,11 @@ footer p {
     margin-left: 20px;
 }
 
+footer p img{
+    width: 100px;
+    margin: 15px 8px;
+}
+
 .derFooter {
     width: 205px;
     height: 100px;
