@@ -1,4 +1,8 @@
 var lienzo=null, canvas=null;
+
+//VARIABLE DE COLISION
+var colision = false;
+
 var x=50,y=50;
 var lastPress=null; //Variable para guardar la tecla presionada
 //En nuestro juego, usaremos las teclas izquierda, arriba, derecha y abajo, cuyos valores numéricos son 37, 38, 39 y 40 respectivamente.
@@ -36,33 +40,60 @@ function accionesJuego(){
         if(lastPress==KEY_P){
         
         }
-
         
            
     //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
-    if(x>=canvas.width)
-        x=0;
+    if(x>=canvas.width-20){
+        colision = true;
+        x=canvas.width-20; x=x;
+    }
 
-    if(x<0)
-        x=canvas.width;
+    if(x<10){
+        colision=true;
+        x=10;x=x;
+    }
 
-    if(y>=canvas.height)
-        y=0;
+    if(y>=canvas.height-20){
+        colision=true;
+        y=canvas.height-20;y=y;
+    }
     
-    if(y<0)
-        y = canvas.height;
+    if(y<10){
+        colision=true;
+        y=10;y=y;
+    }
+        
 }
 function pintarLienzo(lienzo){
     lienzo.fillStyle="#F7F9FA"; //le ponemos un color al lienzo
     lienzo.fillRect(0,0,canvas.width,canvas.height); //Dibujamos el lienzo
     lienzo.fillStyle='#0f0';
-    lienzo.fillRect(x,y,10,10); //Dibujamos el jugador: va por posición x,y y es de 10x10       
+    lienzo.fillRect(x,y,10,10); //Dibujamos el jugador: va por posición x,y y es de 10x10    
+    
+    pintaBordes(lienzo);
 
     //PAUSE
     if(lastPress == KEY_P){
         lienzo.font = "30px Arial";
         lienzo.strokeText("PAUSE", 30, 30);
     }
+
+    //COLISION
+    if(colision){
+        lienzo.font = "50px Arial";
+        lienzo.strokeText("GAME OVER", 50, 50);
+    }
+}
+
+function pintaBordes(lienzo){
+    lienzo.fillStyle = 'red';
+    lienzo.fillRect(0,0,canvas.width,10); //ARRIBA
+    lienzo.fillStyle = 'red';
+    lienzo.fillRect(0,canvas.height-10,canvas.width,10); //ABAJO
+    lienzo.fillStyle = 'red';
+    lienzo.fillRect(0,0,10,canvas.height); //IZQUIERDA
+    lienzo.fillStyle = 'red';
+    lienzo.fillRect(canvas.width-10,0,10,canvas.height); //DERECHA
 }
 
 document.addEventListener('keydown', function(evt) { 
