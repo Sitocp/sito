@@ -2,8 +2,10 @@ var lienzo=null, canvas=null;
 
 //VARIABLE DE COLISION
 var colision = false;
-
+var level = 1;
 var obstaculos = [];
+
+var letreroLevel = null;
 
 var x=50,y=50;
 var lastPress=null; //Variable para guardar la tecla presionada
@@ -15,6 +17,9 @@ const KEY_DOWN=40;
 const KEY_P=80;
 
 function iniciar(){
+    letreroLevel = document.getElementById("level");
+    letreroLevel.innerHTML = 'Level ' + level;
+
     canvas=document.getElementById('lienzo');
     lienzo=canvas.getContext('2d'); //obtenemos el contexto de dibujo
     CreaObstaculos();
@@ -48,26 +53,21 @@ function accionesJuego(){
            
     //verificaremos si el player ha salido del canvas, en cuyo caso, haremos que aparezca por el otro lado:
     if(x>=canvas.width-20){
-        colision = true;
-        GameOver();
-        x=canvas.width-20; x=x;
+        NextLevel();
     }
 
     if(x<10){
         colision=true;
-        GameOver();
         x=10;x=x;
     }
 
     if(y>=canvas.height-20){
         colision=true;
-        GameOver();
         y=canvas.height-20;y=y;
     }
     
     if(y<10){
         colision=true;
-        GameOver();
         y=10;y=y;
     }
 
@@ -83,7 +83,6 @@ function accionesJuego(){
             obstaculo[1]+obstaculo[3]<y)})() )
         {
             colision=true;
-            GameOver();
             x=obstaculo[0]; y=obstaculo[1];    
         }
         
@@ -115,12 +114,17 @@ function pintarLienzo(lienzo){
 }
 
 function CreaObstaculos(){
-    var width = Math.floor(Math.random() * 551);  
-    var height = Math.floor(Math.random() * 301);  
+    obstaculos = [];
+    var width; 
+    var height;
 
-    for (let i = 0; i < 11; i++) {
-        width = Math.floor(Math.random() * 501);  
-        height = Math.floor(Math.random() * 401);  
+    var numObstaculos = 10 + (Math.floor(level*1.3));
+
+    for (let i = 0; i < numObstaculos; i++) {
+        do{
+            width = Math.floor(Math.random() * 501);  
+            height = Math.floor(Math.random() * 401); 
+        }while(width<150); 
 
         obstaculos.push([width,height,10,50]);
     }
@@ -144,13 +148,40 @@ function pintaBordes(lienzo){
     lienzo.fillRect(canvas.width-10,0,10,canvas.height); //DERECHA
 }
 
+function NextLevel(){
+
+    //Reseteamos la posicion del cuadrado verde
+    x=50;
+    y=50;
+
+    //Cambiamos de level
+    level++;
+    letreroLevel.innerHTML = 'Level ' + level;
+
+    //Creamos obstaculos nuevos
+    CreaObstaculos();
+}
+
 function GameOver(){
     document.removeEventListener('keydown', EventoTeclado);
 }
 
 function EventoTeclado(evt){
     //Creamos un manejador de evento para el teclado que se encargue de almacenar la tecla presionada. El evento que nos interesa en este caso es keydown
-    lastPress=evt.keyCode;
+    if(!colision){
+        lastPress=evt.keyCode;
+    }
+    else{
+        if(evt.keyCode == 82){
+            colision = false;
+            level = 1;
+            x=50;y=50;
+            letreroLevel.innerHTML = 'Level ' + level;
+
+            CreaObstaculos();
+        }
+    }
+        
 }
 
 document.addEventListener('keydown', EventoTeclado, false);
