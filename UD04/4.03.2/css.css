@@ -1,0 +1,76 @@
+#p1{
+    animation-duration: 3s;
+    animation-name: parrafo1;
+}
+
+#p2{
+    animation-duration: 6s;
+    animation-name: parrafo2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#p3{
+    animation-duration: 2s;
+    animation-name: parrafo3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes parrafo1 {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+    
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+}
+
+@keyframes parrafo2 {
+    from {
+      margin-left:100%;
+      width:300%
+    }
+
+    50%{
+        font-size: 30px;
+    }
+    
+    to {
+     margin-left:0%;
+     width:100%;
+   }
+}
+
+@keyframes parrafo3 {
+    from {
+      margin-left:100%;
+      width:300%;
+      color: black;
+    }
+
+    20%{
+        color: blue;
+    }
+
+    50%{
+        color: aqua;
+    }
+
+    70%{
+        color: chartreuse;
+    }
+
+    90%{
+        color: crimson;
+    }
+    
+    to {
+     margin-left:0%;
+     width:100%;
+     color: black;
+   }
+}
