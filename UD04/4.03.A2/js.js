@@ -27,8 +27,7 @@ window.addEventListener('load', function(){
             //Comprobamos si ha ganado
             CheckWin();
         }
-
-        if(idT == 'ini1' || idT == 'ini2' || idT == 'ini3' || idT == 'ini4'){ //En caso de que sean los contenedores iniciales
+        else if(idT == 'ini1' || idT == 'ini2' || idT == 'ini3' || idT == 'ini4'){ //En caso de que sean los contenedores iniciales
             ev.target.appendChild( ev.target.appendChild(document.getElementById(ev.dataTransfer.getData('text'))) );
         }
 
