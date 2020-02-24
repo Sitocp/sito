@@ -144,7 +144,7 @@ function pintaBordes(lienzo){
     lienzo.fillRect(0,canvas.height-10,canvas.width,10); //ABAJO
     lienzo.fillStyle = 'red';
     lienzo.fillRect(0,0,10,canvas.height); //IZQUIERDA
-    lienzo.fillStyle = 'red';
+    lienzo.fillStyle = 'purple';
     lienzo.fillRect(canvas.width-10,0,10,canvas.height); //DERECHA
 }
 
